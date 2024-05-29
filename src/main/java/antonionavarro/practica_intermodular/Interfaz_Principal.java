@@ -190,6 +190,7 @@ public class Interfaz_Principal extends javax.swing.JFrame {
     ArrayList<ArrayList<String>> satellitesData = new ArrayList<>();
     
         clearSatellitesTable();
+        clearPlanetsTable();
 
     
     switch (selectedPlanet) {
@@ -246,6 +247,11 @@ public class Interfaz_Principal extends javax.swing.JFrame {
     for (int i = 0; i < TablaSatelites.getRowCount(); i++) {
         for (int j = 0; j < TablaSatelites.getColumnCount(); j++) {
             TablaSatelites.setValueAt(null, i, j);
+        }}}   
+        private void clearPlanetsTable() {
+        for (int i = 0; i < TablaPlanetas.getRowCount(); i++) {
+        for (int j = 0; j < TablaPlanetas.getColumnCount(); j++) {
+            TablaPlanetas.setValueAt(null, i, j);
         }}   
     }//GEN-LAST:event_selectorPlanetasActionPerformed
 
